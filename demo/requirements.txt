@@ -4,4 +4,3 @@ torch>=2.0
 matplotlib>=3.8
 seaborn>=0.13
 plotly>=5.20
-nbformat>=5.10
