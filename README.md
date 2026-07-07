@@ -1,9 +1,7 @@
 # Fight Foresight
 
-Public home for a stripped-down MMA outcome-forecasting demo — ELO ratings,
-a handful of career stats, and a small PyTorch classifier, distilled from a
-larger private research pipeline (which also folds in betting odds and
-community picks, and gets meaningfully more accurate as a result).
+A small MMA outcome-forecasting pipeline: ELO ratings, a handful of career
+stats, and a PyTorch classifier trained to predict UFC fight outcomes.
 
 See **[`demo/`](demo/)** for the code, data, and charts — start with
 [`demo/README.md`](demo/README.md).

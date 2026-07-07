@@ -1,10 +1,8 @@
-# Fight Foresight (public demo)
+# Fight Foresight
 
-A stripped-down, public companion to a larger private MMA outcome-prediction
-pipeline. This version deliberately drops everything proprietary — betting
-odds, community picks, the ~550-feature engineered set — down to one clean
-CSV of historical UFC fights, ELO ratings, a handful of career stats, and a
-small PyTorch classifier.
+A small, self-contained UFC outcome-forecasting pipeline: one clean CSV of
+historical fights, ELO ratings and a handful of career stats engineered from
+it, and a small PyTorch classifier trained on the result.
 
 ## What's here
 
@@ -68,9 +66,8 @@ corner.
 | Baseline: pick the higher-ELO fighter | ~56% | — |
 | PyTorch model (ELO + career stats) | ~60% | ~0.235 |
 
-Modest, and it should be — this is 11 features from one data source, versus
-the private pipeline's ~550 features across two data sources plus odds and
-picks. The point of this repo is the pipeline, not the edge.
+Modest, and it should be — 11 features from one data source. The point of
+this repo is the pipeline, not the edge.
 
 ## Features used
 
@@ -88,10 +85,3 @@ history *before* the fight in question:
 ## Stack
 
 Python, Pandas, NumPy, PyTorch, Matplotlib, Seaborn, Plotly.
-
-## Not included (by design)
-
-Betting odds, community pick percentages, non-UFC organizations, the full
-career-stat feature set (outcome/method streaks, drought windows, rolling
-windows, opponent-quality ranks, etc.), and any scraping code. Those live in
-the private research pipeline this project was distilled from.
